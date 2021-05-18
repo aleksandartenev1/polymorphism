@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B147CE25-33DB-4E6A-A4D8-409EA002DCA9}</ProjectGuid>
+    <ProjectGuid>{436BF3E6-1FF9-447C-8CA1-B375B257218A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Encapsulation</RootNamespace>
-    <AssemblyName>Encapsulation</AssemblyName>
+    <RootNamespace>Polymorphism</RootNamespace>
+    <AssemblyName>Polymorphism</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dragon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Encapsulation\Encapsulation.csproj">
+      <Project>{0f97ef25-9614-494d-93a0-4e77429bca3c}</Project>
+      <Name>Encapsulation</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -12,8 +12,14 @@ namespace Encapsulation
 
         public string Element
         {
-            get { return element; }
-            set { element = value; }
+            get
+            {
+                return element;
+            }
+            set
+            {
+                element = value;
+            }
         }
     }
 }

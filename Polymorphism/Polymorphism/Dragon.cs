@@ -7,11 +7,9 @@ using Encapsulation;
 
 namespace Polymorphism
 {
-    class Program
+    public class Dragon
     {
-        static void Main(string[] args)
-        {
-            
-        }
+        private string name;
+        private int level;
     }
 }
