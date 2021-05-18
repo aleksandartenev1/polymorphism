@@ -10,6 +10,7 @@ namespace Encapsulation
     {
         private string firstElement;
         private string secondElement;
+        private string mixedDragon;
 
         public string FirstElement
         {
@@ -32,6 +33,18 @@ namespace Encapsulation
             set
             {
                 secondElement = value;
+            }
+        }
+
+        public string MixedDragon
+        {
+            get
+            {
+                return mixedDragon;
+            }
+            set
+            {
+                mixedDragon = value;
             }
         }
     }

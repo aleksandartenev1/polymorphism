@@ -10,7 +10,6 @@ namespace Polymorphism.MixtureDragons
     public class MagnetDragon : Dragon
     {
         private bool success { get; set; }
-        private string Mixture { get; set; }
         public KekkeiGenkai Mix { get; set; }
         public MagnetDragon(string name, string element, int level) : base(name, element, level)
         {
@@ -21,9 +20,8 @@ namespace Polymorphism.MixtureDragons
         {
             if (firstElement == "air" && secondElement == "earth" || firstElement == "earth" && secondElement == "air")
             {
-                Mixture = "Magnet Dragon";
                 success = true;
-                return Mixture;
+                return Mix.MixedDragon = "Magnet Dragon";
             }
             else
             {
@@ -36,7 +34,7 @@ namespace Polymorphism.MixtureDragons
         {
             if (success)
             {
-                Console.WriteLine($"{Name} is a {Mixture} and blasts you with Magnet Release: Gold Dust Imperial Funeral!");
+                Console.WriteLine($"{Name} is a {Mix.MixedDragon} and blasts you with Magnet Release: Gold Dust Imperial Funeral!");
             }
             else
             {

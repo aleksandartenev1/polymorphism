@@ -10,7 +10,6 @@ namespace Polymorphism.MixtureDragons
     public class BoilDragon : Dragon
     {
         private bool success { get; set; }
-        private string Mixture { get; set; }
         public KekkeiGenkai Mix { get; set; }
         public BoilDragon(string name, string element, int level) : base(name, element, level)
         {
@@ -21,9 +20,8 @@ namespace Polymorphism.MixtureDragons
         {
             if (firstElement == "water" && secondElement == "fire" || firstElement == "fire" && secondElement == "water")
             {
-                Mixture = "Boil Dragon";
                 success = true;
-                return Mixture;
+                return Mix.MixedDragon = "Boil Dragon";
             }
             else
             {
@@ -36,7 +34,7 @@ namespace Polymorphism.MixtureDragons
         {
             if (success)
             {
-                Console.WriteLine($"{Name} is a {Mixture} and blasts you with Boil Release: Melting Mist!");
+                Console.WriteLine($"{Name} is a {Mix.MixedDragon} and blasts you with Boil Release: Melting Mist!");
             }
             else
             {

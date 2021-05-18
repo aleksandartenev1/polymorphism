@@ -10,7 +10,6 @@ namespace Polymorphism.MixtureDragons
     class IceDragon : Dragon
     {
         private bool success { get; set; }
-        private string Mixture { get; set; }
         public KekkeiGenkai Mix { get; set; }
         public IceDragon(string name, string element, int level) : base(name, element, level)
         {
@@ -21,9 +20,8 @@ namespace Polymorphism.MixtureDragons
         {
             if (firstElement == "air" && secondElement == "water" || firstElement == "water" && secondElement == "air")
             {
-                Mixture = "Ice Dragon";
                 success = true;
-                return Mixture;
+                return Mix.MixedDragon = "Ice Dragon";
             }
             else
             {
@@ -36,7 +34,7 @@ namespace Polymorphism.MixtureDragons
         {
             if (success)
             {
-                Console.WriteLine($"{Name} is a {Mixture} and blasts you with Ice Release: One Horned White Whale!");
+                Console.WriteLine($"{Name} is a {Mix.MixedDragon} and blasts you with Ice Release: One Horned White Whale!");
             }
             else
             {
