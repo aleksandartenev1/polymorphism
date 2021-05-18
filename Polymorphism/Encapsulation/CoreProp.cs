@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Encapsulation
 {
-    public class Heart
+    public class CoreProp
     {
         private string element;
-
+        private int level;
         public string Element
         {
             get
@@ -21,5 +21,23 @@ namespace Encapsulation
                 element = value;
             }
         }
+        public int Level
+        {
+            get
+            {
+                return level;
+            }
+            set
+            {
+                level = value;
+            }
+        }
+
+        public CoreProp(string element, int level)
+        {
+            Element = element;
+            Level = level;
+        }
+
     }
 }

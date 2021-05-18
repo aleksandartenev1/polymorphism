@@ -43,7 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FundamentalDragons\EarthDragon.cs" />
+    <Compile Include="FundamentalDragons\WaterDragon.cs" />
+    <Compile Include="FundamentalDragons\FireDragon.cs" />
+    <Compile Include="FundamentalDragons\AirDragon.cs" />
     <Compile Include="Dragon.cs" />
+    <Compile Include="MixtureDragons\BoilDragon.cs" />
+    <Compile Include="MixtureDragons\MagnetDragon.cs" />
+    <Compile Include="MixtureDragons\IceDragon.cs" />
+    <Compile Include="MixtureDragons\LavaDragon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
