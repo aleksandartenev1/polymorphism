@@ -37,7 +37,7 @@ namespace Polymorphism
             }
             else
             {
-                Console.WriteLine($"Elder Dragon {Name} has {Core.Element} element and is level {Core.Level}.");
+                Console.WriteLine($"{Name} has {Core.Element} element and is level {Core.Level}.");
             }
         }
     }
